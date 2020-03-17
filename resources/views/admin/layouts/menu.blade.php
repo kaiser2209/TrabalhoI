@@ -6,10 +6,10 @@
             <a href="{{route('produtos.listar')}}" class="nav-link">Produtos</a>
         </li>
         <li class="nav-item">
-            <a href="" class="nav-link">Categorias</a>
+            <a href="{{route('categorias.listar')}}" class="nav-link">Categorias</a>
         </li>
         <li class="nav-item">
-            <a href="" class="nav-link">Fornecedores</a>
+            <a href="{{route('fornecedores.listar')}}" class="nav-link">Fornecedores</a>
         </li>
     </ul>
 </nav>

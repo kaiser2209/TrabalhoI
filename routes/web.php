@@ -20,4 +20,6 @@ Route::get('/', function () {
 Route::prefix('admin')->group(function () {
     Route::get('/produtos', 'ProdutoController@listar')->name('produtos.listar');
     Route::get('/produtos/adicionar', 'ProdutoController@adicionar')->name('produtos.form_adicionar');
+    Route::get('/categorias', 'CategoriaController@listar')->name('categorias.listar');
+    Route::get('/fornecedores', 'FornecedorController@listar')->name('fornecedores.listar');
 });
