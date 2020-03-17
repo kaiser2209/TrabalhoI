@@ -18,6 +18,6 @@ Route::get('/', function () {
 });
 
 Route::prefix('admin')->group(function () {
-    Route::get('/cursos', 'CursoController@listar')->name('cursos.listar');
-    Route::get('/cursos/adicionar', 'CursoController@adicionar')->name('cursos.form_adicionar');
+    Route::get('/produtos', 'ProdutoController@listar')->name('produtos.listar');
+    Route::get('/produtos/adicionar', 'ProdutoController@adicionar')->name('produtos.form_adicionar');
 });
