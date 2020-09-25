@@ -9,5 +9,23 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 
     <title>Programação WEB II - Trabalho</title>
+    <style>
+        body {
+            margin: 25px;
+        }
+    </style>
 </head>
 <body>
+
+    <h1><?=$titulo?></h1>
+
+    <table class="table table-hover table-dark">
+        <tr>
+            <th><?=$subtitulo?></th>
+        </tr>
+        <?php foreach($produtos as $produto): ?>
+        <tr><td><?=$produto?></td></tr>
+        <?php endforeach; ?>
+    </table>
+</body>
+</html>

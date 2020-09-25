@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProdutoController;
+use App\Http\Controllers\ItemController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,13 +15,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
 
-Route::prefix('admin')->group(function () {
-    Route::get('/produtos', 'ProdutoController@listar')->name('produtos.listar');
-    Route::get('/produtos/adicionar', 'ProdutoController@adicionar')->name('produtos.form_adicionar');
-    Route::get('/categorias', 'CategoriaController@listar')->name('categorias.listar');
-    Route::get('/fornecedores', 'FornecedorController@listar')->name('fornecedores.listar');
-});
+Route::get('/', [ItemController::class, 'itens']);
